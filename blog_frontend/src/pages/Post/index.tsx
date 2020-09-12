@@ -24,7 +24,7 @@ const Posts: React.FC = () => {
   const { ...postId } = useLocation().state;
 
   useEffect(() => {
-    loadPosts();
+    void loadPosts();
   });
 
   async function loadPosts() {

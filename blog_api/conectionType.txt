@@ -1,3 +1,5 @@
+
+Mysql - Working
 {
   "type": "mysql",
   "host": "localhost",
@@ -16,3 +18,19 @@
     "subscribersDir": "src/subscriber"
   }
 }
+
+Sqlite
+{
+  "name": "default",
+  "type": "sqlite",
+  "database": "db.sqlite3",
+  "autoSchemaSync": true,
+  "syncronize": true,
+  "entities": ["src/entity/**/*.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
